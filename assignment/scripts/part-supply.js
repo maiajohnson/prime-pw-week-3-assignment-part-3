@@ -32,7 +32,20 @@ console.log(supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
+for (let index = 0; index < supplyChanges.length; index++) {
+    
+  if (supplyChanges[index] > 0) {
+    console.log('Added ' + supplyChanges[index] + ' parts');
+  }
+    else if (supplyChanges[index] = 0) {
+    console.log('No Change'); }
 
+    else if (supplyChanges[index] < 0) {
+    console.log('Removed ' + supplyChanges[index] + ' parts');
+    }
+} 
+// I know there's something wrong with the syntax but I can't quite figure it out
+// I tried doing all if statements; and if, else if, and else statement; and this and none of them show all three outcomes
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
